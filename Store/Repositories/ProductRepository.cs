@@ -1,3 +1,4 @@
+using Entities.Dtos;
 using Entities.Models;
 using Repositories.Contracts;
 
@@ -21,5 +22,7 @@ namespace Repositories
             return FindByCondition(p => p.ProductID.Equals(id), trackChanges);
         }
 
+        public void UpdateOneProduct(Product entity) => Update(entity);
+        
     }
 }

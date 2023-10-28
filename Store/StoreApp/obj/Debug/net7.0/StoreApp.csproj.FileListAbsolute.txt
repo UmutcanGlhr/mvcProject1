@@ -61,3 +61,5 @@ C:\Users\asus\Desktop\mvc1\Store\StoreApp\bin\Debug\net7.0\Repositories.dll
 C:\Users\asus\Desktop\mvc1\Store\StoreApp\bin\Debug\net7.0\Repositories.pdb
 C:\Users\asus\Desktop\mvc1\Store\StoreApp\bin\Debug\net7.0\Services.dll
 C:\Users\asus\Desktop\mvc1\Store\StoreApp\bin\Debug\net7.0\Services.pdb
+C:\Users\asus\Desktop\mvc1\Store\StoreApp\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\asus\Desktop\mvc1\Store\StoreApp\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

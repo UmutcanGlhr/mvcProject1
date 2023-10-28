@@ -1,4 +1,4 @@
-@model Product
+@model ProductDtoForUpdate
 
 
 <div class="text-center">
@@ -18,6 +18,10 @@
         <label asp-for="Price"></label>
         <input asp-for="Price" class="form-control" />
     </div>
+    <div class="form-group my-3">
+        <select class="form-control" asp-items="@ViewBag.Categories" asp-for="CategoryID"></select>
+    </div>
+      
     <div class="form-group my-3">
         <div class="btn-group">
         <button class="btn btn-primary" type="submit">

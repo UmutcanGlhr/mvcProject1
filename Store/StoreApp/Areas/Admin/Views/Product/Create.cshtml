@@ -1,4 +1,4 @@
-@model Product
+@model ProductDtoForInsertion
 
 <div class="text-center">
     <div class="display-6">Create Product</div>
@@ -16,8 +16,9 @@
         <input asp-for="Price" class="form-control" />
     </div>
     <div class="form-group my-3">
-        <label asp-for="CategoryID"></label>
-        <input asp-for="CategoryID" class="form-control" />
+        <label asp-for="CategoryID">Category Name</label>
+        <select class="form-control" asp-for="CategoryID" asp-items="@ViewBag.Categories">
+        </select>
     </div>
     <div class="form-group my-3">
         <div class="btn-group">
