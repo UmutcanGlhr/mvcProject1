@@ -13,9 +13,11 @@
         <thead>
             <tr>
                 <th>ID</th>
+                <th>Image Url</th>
                 <th>ProductName</th>
                 <th>Price</th>
                 <th>Category</th>
+            
                 <th>Operations</th>
             </tr>
         </thead>
@@ -24,9 +26,13 @@
             {
                 <tr>
                     <th>@product.ProductID</th>
+                    <th>
+                        <img class="border border-light rounded" width="50" src="@product?.ImageUrl" alt="@product.ProductName">
+                    </th>
                     <th>@product.ProductName</th>
                     <th>@product.Price.ToString("c")</th>
                     <th>@product.CategoryID</th>
+                    
                     <th>
                         <div class="btn-group">
                             <a class="btn btn-warning" target="_blank" asp-area="" asp-controller="Product"asp-action="Get" asp-route-id="@product.ProductID">

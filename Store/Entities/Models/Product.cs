@@ -11,7 +11,11 @@ public class Product
     [Required(ErrorMessage = "Price is required.")]
     public decimal Price { get; set; }
 
-    public int? CategoryID { get; set; }
+    public String? Summary { get; set; } = String.Empty;
 
-    public Category? category { get; set; }
+    public String? ImageUrl { get; set; }
+
+    public int? CategoryID { get; set; } // ForeginKey
+
+    public Category? category { get; set; } // Navigation property
 }

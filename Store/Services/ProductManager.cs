@@ -36,6 +36,8 @@ namespace Services
             return _manager.Product.GetAllProducts(trackChanges);
         }
 
+        
+
         public Product? GetOneProduct(int id, bool trackChanges)
         {
             var product = _manager.Product.GetOneProduct(id, trackChanges);

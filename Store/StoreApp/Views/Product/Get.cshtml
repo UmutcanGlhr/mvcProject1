@@ -1,13 +1,24 @@
 @model Product
 
-<h3>@Model.ProductName</h3>
-<p>@Model.Price</p>
+<div class="row">
+    <div class="col-md-12">
+        <div class="text-center">
+            <h6 class="display-6">
+                @Model.ProductName
+            </h6>
 
-<div class="btn-group">
-    <a class="btn btn-primary" asp-controller="Home" asp-action="Index">
-        <i class="fa-solid fa-house"></i>
-        Home</a>
-    <a class="btn btn-primary" asp-controller="Product" asp-action="Index">
-        <i class="fa-solid fa-shop"></i>
-        Product</a>
+            <img class="img-fuild shadow rounded-3 my-3" width="250" src="@Model?.ImageUrl" alt="@Model.ProductName">
+            <p class="my-3">@Model.Summary</p>
+            <p class="lead text-danger my-3">@Model.Price.ToString("c")</p>
+
+            <div class="btn-group my-3">
+                <a class="btn btn-primary" asp-controller="Home" asp-action="Index">
+                    <i class="fa-solid fa-house"></i>
+                    Home</a>
+                <a class="btn btn-primary" asp-controller="Product" asp-action="Index">
+                    <i class="fa-solid fa-shop"></i>
+                    Product</a>
+            </div>
+        </div>
+    </div>
 </div>

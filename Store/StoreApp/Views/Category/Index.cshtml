@@ -7,8 +7,10 @@
 </div>
 
 <ul class="list-group my-3">
-    @foreach(var cat in Model)
+    @foreach (var cat in Model)
     {
-       <li class="list-group-item">@cat.CategoryName</li>     
+        <a asp-controller="Product" asp-action="Index" asp-route-id="@cat.CategoryID">
+            <li class="list-group-item">@cat.CategoryName</li>
+        </a>
     }
 </ul>
